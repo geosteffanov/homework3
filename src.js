@@ -10,7 +10,7 @@ function validateName(name) {
 }
 
 function validateEmail(email) {
- regex = RegExp(("^\\S+@[\\w\\d]+\\.[\\w\\d]+$"));
+ regex = RegExp(("^\\S+@\\S+\\.\\S+$"));
 
  return regex.test(email);
 }
