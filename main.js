@@ -26,23 +26,23 @@ function getData() {
 function validateData(data) {
   errors = {};
   if (!validateUsername(data["username"])) {
-    errors["username"] = "Невалидно потребителско име. ";
+    errors["username"] = "Невалидно потребителско име. Потребителското име е задължително поле и трябва да е между 3 и 10 символа.";
   }
 
   if (!validateName(data["name"])) {
-    errors["name"] = "Невалидно име.";
+    errors["name"] = "Невалидно име. Името е задължително поле и не може да е повече от 50 букви.";
   }
 
   if (!validateName(data["family-name"])) {
-    errors["family-name"] = "Невалидно фамилно име.";
+    errors["family-name"] = "Невалидно фамилно име. Фамилното име е задължително поле и не може да е повече от 50 букви.";
   }
 
   if (!validateEmail(data["email"])) {
-    errors["email"] = "Невалиден e-mail.";
+    errors["email"] = "Невалиден e-mail. E-mail-ът е задължително поле.";
   }
 
   if (!validatePassword(data["password"])) {
-    errors["password"] = "Невалидна парола.";
+    errors["password"] = "Невалидна парола. Паролата е задължително поле между 6 и 10 символа, и трябва да съдържа поне една главна и поне една малка буква, както и поне една цифра.";
   }
 
   if (!validateCity(data["city"])) {
