@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="src.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div id="registration-container">
+      <h1>Регистрация</h1>
+      <form id="registration-form" onsubmit="return validateFormSubmission(event)">
+        <div id="username-errcontainer">
+          <label for="fname" >Потребителско име</label><br>
+          <input type="text" id="username" name="username">
+          <div class="error" id="username-error"></div>
+        </div>
+
+        <div id="name-errcontainer">
+          <label for="lname">Име</label><br>
+          <input type="text" id="name" name="lname">
+          <div class="error" id="name-error"></div>
+        </div>
+
+        <div id="family-name-errcontainer">
+          <label for="lname">Фамилия</label><br>
+          <input type="text" id="family-name" name="lname">
+          <div class="error" id="family-name-error"></div>
+        </div>
+
+        <div id="email-errcontainer">
+          <label for="fname">Имейл</label><br>
+          <input type="text" id="email" name="fname">
+          <div class="error" id="email-error"></div>
+        </div>
+
+        <div id="password-errcontainer">
+          <label for="lname">Парола</label><br>
+          <input type="password" id="password" name="lname">
+          <div class="error" id="password-error"></div>
+        </div>
+
+
+        <label for="address_fields">Адрес</label>
+        <div id="address_fields">
+          <div id="street-errcontainer">
+            <label for="lname">Улица</label><br>
+            <input type="text" id="street" name="lname">
+            <div class="error" id="address-error"></div>
+          </div>
+
+          <div id="city-errcontainer">
+            <label for="fname">Град</label><br>
+            <input type="text" id="city" name="fname">
+            <div class="error" id="city-error"></div>
+          </div>
+
+          <div id="postal-code-errcontainer">
+            <label for="lname">Пощенски код</label><br>
+            <input type="text" id="postal-code" name="lname">
+            <div class="error" id="postal-code-error"></div>
+          </div>
+
+        </div>
+
+        <input type="submit" value="Submit" id="register-btn">
+      </form>
+    </div>
+  </body>
+</html>

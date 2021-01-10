@@ -1,0 +1,20 @@
+input {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label {
+  font-size:large;
+  font-weight: bold;
+}
+
+#address_fields input, #address_fields label {
+  margin-left: 10px;
+  font-size: 80%;
+}
+
+.error {
+  display:none;
+  color: red;
+  font-size: 80%;
+}
